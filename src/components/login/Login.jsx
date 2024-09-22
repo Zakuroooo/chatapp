@@ -3,9 +3,11 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./login.css";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
-import { auth, db } from "/Users/pranaysarkar/Desktop/CHAT APPLICATION/react-firebase-chat/src/lib/firebase.js";
+// import { auth, db } from "/Users/pranaysarkar/Desktop/CHAT APPLICATION/react-firebase-chat/src/lib/firebase.js";
+
 import { doc, setDoc } from "firebase/firestore";
 import upload from "../../lib/upload";
+import { auth, db } from "../../lib/firebase";
 
 const Login = () => {
     const [avatar, setAvatar] = useState({
