@@ -1,0 +1,109 @@
+.detail {
+    flex: 1;
+    background-color: #000; /* Black background */
+
+    .user {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        border-bottom: 1px solid #444;
+
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+
+    .info {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        .option {
+            .title {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                img {
+                    width: 30px;
+                    height: 30px;
+                    background-color: #222; /* Dark background for icons */
+                    padding: 10px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    filter: none; /* Remove filter to keep original color */
+                    fill: white; /* Change color to white */
+                }
+            }
+
+            .photos {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                margin-top: 20px;
+
+                .photoItem {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .photoDetail {
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+
+                        img {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 5px;
+                        }
+
+                        span {
+                            font-size: 14px;
+                            color: #aaa; /* Light gray */
+                            font-weight: 300;
+                        }
+                    }
+
+                    .icon {
+                        width: 30px;
+                        height: 30px;
+                        background-color: #222; /* Dark background for icons */
+                        padding: 10px;
+                        border-radius: 50%;
+                        cursor: pointer;
+                        fill: white; /* Change color to white */
+                    }
+                }
+            }
+        }
+
+        button {
+            padding: 15px;
+            background-color: #e64a69; /* Pinkish color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #d10025; /* Darker on hover */
+            }
+
+            &.logout {
+                padding: 10px;
+                background-color: #007bff; /* Bootstrap primary blue */
+            }
+
+            &.logout:hover {
+                background-color: #0056b3; /* Darker blue on hover */
+            }
+        }
+    }
+}

@@ -1,0 +1,90 @@
+.login {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center items vertically and horizontally */
+    background-color: #000; /* Black background */
+
+    .item {
+        flex: 0 1 400px; /* Set a maximum width for the form */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px; /* Increased gap for better spacing */
+        padding: 40px;
+        background-color: rgba(17, 25, 40, 0.9); /* Slightly darker background */
+        border-radius: 15px; /* Rounded corners */
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Soft shadow effect */
+        margin: 0 auto; /* Center the item */
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: 100%; /* Keep it responsive */
+
+        input {
+            padding: 15px;
+            border: none;
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.1); /* Light input background */
+            color: white; /* Text color */
+            border-radius: 10px; /* More rounded corners */
+            width: 100%;
+            transition: background-color 0.3s; /* Smooth transition on focus */
+            
+            &:focus {
+                background-color: rgba(255, 255, 255, 0.2); /* Change on focus */
+            }
+        }
+
+        label {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+            cursor: pointer;
+            text-decoration: underline;
+            color: white; /* Text color for the label */
+
+            img {
+                width: 50px;
+                height: 50px;
+                border-radius: 10px;
+                object-fit: cover;
+                opacity: 0.9;
+            }
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            background-color: #1f8ef1; /* Button color */
+            color: white; /* Button text color */
+            border-radius: 10px; /* Rounded button */
+            cursor: pointer;
+            font-weight: 500;
+            transition: background-color 0.3s; /* Smooth transition on hover */
+
+            &:hover {
+                background-color: #1a78c1; /* Darker on hover */
+            }
+
+            &:disabled {
+                cursor: not-allowed;
+                background-color: rgba(31, 142, 241, 0.3); /* Disabled button */
+            }
+        }
+    }
+
+    .separator {
+        height: 80%;
+        width: 2px;
+        background-color: #dddddd35; /* Separator color */
+    }
+}
